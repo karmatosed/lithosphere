@@ -1,0 +1,125 @@
+/*
+Theme Name: Lithosphere
+Theme URI:
+Author: karmatosed
+Author URI: https://tammielister.com
+Description: Foundations should be simply
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: lithosphere
+Tags: translation-ready
+*/
+:root {
+  --l-color-yellow: #f8e24c;
+  --l-color-grey: #939599;
+  --l-color-text-grey: #2d2d2d;
+  --l-color-background: #ffffff;
+  --l-color-highlight: #fff0e2;
+  --l-color-mid-grey: #eeeeee;
+  --l-color-border-grey: #f3f3f3;
+  --l-font-size-tiny: 1rem;
+  --l-font-size-small: 1.1em;
+  --l-font-size-normal: 1.2em;
+  --l-font-size-medium: 1.44em;
+  --l-font-size-large: 1.728em;
+  --l-font-size-huge: 2.074em;
+  --l-font-size-giant: 2.488em;
+  --l-border-width: 2px;
+  --l-transition-fast: .15s;
+  --l-border-radius: 2px;
+  --l-site-width: 1280px;
+  --l-content-width: 960px;
+  --l-font-stack: 'Inter', sans-serif; }
+
+/**
+ * Base styles and resets.
+ */
+* {
+  box-sizing: border-box; }
+
+html {
+  padding: 16px; }
+
+body {
+  margin: 0;
+  color: var(--l-color-text-grey);
+  font-family: var(--l-font-stack);
+  line-height: 1.7; }
+
+a {
+  text-decoration: none;
+  transition: all var(--l-transition-fast) ease;
+  box-shadow: 0 2px 0 0 currentColor, inset 0 -2px 0 0 currentColor; }
+  a:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 var(--l-border-width);
+    position: relative;
+    z-index: 2;
+    border-radius: 0.4px; }
+  a:hover {
+    box-shadow: 0 4px 0 0 currentColor, inset 0 -2px 0 0 currentColor; }
+  .has-vertical-text a {
+    box-shadow: -2px 0 0 0 currentColor, inset 2px 0 0 0 currentColor; }
+    .has-vertical-text a:hover {
+      box-shadow: -4px 0 0 0 currentColor, inset 2px 0 0 0 currentColor; }
+    .has-vertical-text a:focus {
+      box-shadow: 0 0 0 var(--l-border-width) currentColor; }
+
+figure {
+  margin-left: 0;
+  margin-right: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--l-border-radius); }
+
+::-moz-placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+:-ms-input-placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+::placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+/* spacing on smaller screens */
+@media (max-width: 600px) {
+  main {
+    padding: 32px; } }
+
+@media (max-width: 1200px) {
+  main {
+    padding: 0 32px; } }
+
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+ul.wp-block-latest-posts li a {
+  background-color: var(--l-color-yellow);
+  padding: 2px 5px; }
+
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+ul.wp-block-latest-posts li a:hover {
+  background-color: var(--l-color-text-grey);
+  color: var(--l-color-background);
+  padding: 2px 5px; }
+
+a:hover, a:focus, a:active {
+  color: var(--l-color-mid-grey); }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }

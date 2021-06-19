@@ -1,0 +1,28 @@
+{
+	"name": "lithosphere",
+	"version": "1.0.0",
+	"description": "![lithosphere](./screenshot.png)",
+	"main": "index.php",
+	"scripts": {
+		"sass-style": "node-sass --watch style.scss --output .",
+		"autoprefixer-style": "postcss --watch style.css --use autoprefixer --no-map -d .",
+		"sass-hacks": "node-sass --watch editor-hacks.scss --output .",
+		"autoprefixer-hacks": "postcss --watch editor-hacks.css --use autoprefixer --no-map -d .",
+		"dev": "concurrently \"npm run sass-style\" \"npm run autoprefixer-style\" \"npm run sass-hacks\" \"npm run autoprefixer-hacks\""
+	},
+	"keywords": [
+		"theme",
+		"wordpress"
+	],
+	"author": "karmatosed",
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"autoprefixer": "^9.7.6",
+		"concurrently": "^5.2.0",
+		"postcss-cli": "^7.1.1"
+	},
+	"dependencies": {
+		"node-sass": "^4.14.1",
+		"sass": "^1.35.1"
+	}
+}
