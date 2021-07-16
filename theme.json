@@ -18,8 +18,8 @@
 				"units": [ "px", "em", "rem", "vh", "vw" ]
 			},
 			"layout": {
-				"contentSize": "var(--l-content-width)",
-				"wideSize": "var(--l-site-width)"
+				"contentSize": "880px",
+				"wideSize": "1144px"
 			},
 			"color": {
 				"palette": [
