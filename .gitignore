@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+node_modules
+block-template-parts/.DS_Store
+block-templates/.DS_Store
