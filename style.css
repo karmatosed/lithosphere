@@ -38,9 +38,6 @@ Tags: translation-ready
 * {
   box-sizing: border-box; }
 
-html {
-  padding: 16px; }
-
 body {
   margin: 0;
   color: var(--l-color-text-grey);
@@ -87,12 +84,12 @@ img {
 
 /* spacing on smaller screens */
 @media (max-width: 600px) {
-  main {
-    padding: 32px; } }
+  html {
+    padding: 0 24px; } }
 
-@media (max-width: 1200px) {
-  main {
-    padding: 0 32px; } }
+@media (max-width: 1144px) {
+  html {
+    padding: 0 24px; } }
 
 p a,
 h1 a,

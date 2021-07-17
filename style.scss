@@ -88,9 +88,6 @@ $grid-unit-120: $grid-unit * 12;
 	box-sizing: border-box;
 }
 
-html {
-}
-
 body {
 	margin: 0;
 	color: var(--l-color-text-grey);
@@ -98,6 +95,7 @@ body {
 	line-height: 1.7;
 }
 
+//  very basic menu styling for now
 a {
 	text-decoration: none;
 	transition: all var(--l-transition-fast) ease;
@@ -146,17 +144,16 @@ img {
 
 /* spacing on smaller screens */
 @media ( max-width: 600px ) {
-	main {
-		padding: 32px;
+	html {
+		padding: 0 24px;
 	}
 }
 
-@media ( max-width: 1200px ) { 
-    main {
-		padding: 0 32px;
+@media ( max-width: 1144px ) { 
+    html {
+		padding: 0 24px;
     }
 }
-
 
 p a,
 h1 a,

@@ -56,10 +56,6 @@ function lithosphere_editor_styles() {
 			lithosphere_fonts_url(),
 		)
 	);
-
-	/*register_block_type('lithosphere/editor-hacks', [
-		'style' => 'editor-hacks',
-	]);*/
 }
 add_action( 'admin_init', 'lithosphere_editor_styles' );
 
